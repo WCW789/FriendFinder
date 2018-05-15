@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Page</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <br>
+    <div class="panel-body">
+
+        <form>
+
+            <div class="form-group">
+                <label for="user_name">
+                    <b>Name: (Required)</b>
+                </label>
+                <input type="text" class="form-control" id="first_q" placeholder="Enter answer" name="first_q">
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="photo_image">
+                    <b>Link to Photo Image: (Required)</b>
+                </label>
+                <input type="text" class="form-control" id="second_q" placeholder="Enter answer" name="second_q">
+            </div>
+            <br>
+
+            <p>
+                <b>Your mind is always buzzing with unexplored ideas and plans:</b>
+            </p>
+            <select id="third_q">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select><br><br>
+
+            <p>
+                <b>Generally speaking, you rely more on your experience than your imagination:</b>
+            </p>
+            <select id="fourth_q">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select><br><br>
+
+            <p>
+                <b>You find it easy to stay relaxed and focused even when there is some pressure:</b>
+            </p>
+            <select id="fifth_q">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select><br><br>
+
+            <p>
+                <b>You rarely do something just out of sheer curiosity:</b>
+            </p>
+            <select id="sixth_q">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select><br><br>
+
+            <p>
+                <b>People can rarely upset you:</b>
+            </p>
+            <select id="seventh_q">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select><br><br>
+
+            <p>
+                <b>It is often difficult for you to relate to other people’s feelings:</b>
+            </p>
+            <select id="eighth_q">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select><br><br>
+
+            <p>
+                <b>In a discussion, truth should be more important than people’s sensitivities:</b>
+            </p>
+            <select id="ninth_q">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select><br><br>
+
+            <p>
+                <b>You rarely get carried away by fantasies and ideas:</b>
+            </p>
+            <select id="tenth_q">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select><br><br>
+
+            <p>
+                <b>You think that everyone’s views should be respected regardless of whether they are supported by facts or not:</b>
+            </p>
+            <select id="eleventh_q">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select><br><br>
+
+            <p>
+                <b>You feel more energetic after spending time with a group of people:</b>
+            </p>
+            <select id="twelfth_q">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select><br><br><br>
+
+            <button type="button" class="btn btn-default" data-toggle="modal" id="submit">SUBMIT and REFRESH</button>
+
+        </form>
+
+    </div><br><br>
+
+    <div id="testHere"></div>
+
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <a href="/api/friends">API Friends List</a>
+            </p>
+        </div>
+    </footer>
+
+    </div>
+
+</body>
+
+<style>
+
+    body {
+        padding-left: 30px;
+        background-color: lightcyan;
+    }
+
+</style>
+
+</html>
+
+<script type="text/javascript">
+
+    $("#first_q").val(""); $("#second_q").val(""); $("#third_q").val(""); $("#fourth_q").val("");
+    $("#fifth_q").val(""); $("#sixth_q").val(""); $("#seventh_q").val(""); $("#eighth_q").val("");
+    $("#ninth_q").val(""); $("#tenth_q").val(""); $("#eleventh_q").val(""); $("#twelfth_q").val("");
+
+
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+
+        let scores = [$("#third_q").val().trim(), $("#fourth_q").val().trim(), $("#fifth_q").val().trim(), $("#sixth_q").val().trim(), $("#seventh_q").val().trim(), $("#eighth_q").val().trim(), $("#ninth_q").val().trim(), $("#tenth_q").val().trim(), $("#eleventh_q").val().trim(), $("#twelfth_q").val().trim()];
+
+        var userAnswers = {
+            name: $("#first_q").val().trim(),
+            photo: $("#second_q").val().trim(),
+            scores,
+        };
+
+        $.post("/api/friends", userAnswers,
+            function (data) {
+
+                $("#first_q").val(""); $("#second_q").val(""); $("#third_q").val(""); $("#fourth_q").val("");
+                $("#fifth_q").val(""); $("#sixth_q").val(""); $("#seventh_q").val(""); $("#eighth_q").val("");
+                $("#ninth_q").val(""); $("#tenth_q").val(""); $("#eleventh_q").val(""); $("#twelfth_q").val("");
+
+            });
+    });
+
+    ///
+
+    function runFriendQuery() {
+
+        var currentURL = window.location.origin;
+
+        $.ajax({
+            url: currentURL + "/api/friends",
+            method: "GET",
+        })
+            .then(function (palData) {
+
+                console.log("URL: " + currentURL + "/api/friends");
+                console.log("--------------------");
+
+                console.log(palData);
+                console.log("--------------------");
+
+                let sumArray = [];
+                let friendDiff = [];
+
+                function getSum(total, num) {
+                    return total + num;
+                }
+
+                for (i = 0; i < palData.length - 1; i++) {
+                    for (j = 0; j < palData[i].scores.length; j++) {
+                        sumArray.push((Math.abs(palData[palData.length - 1].scores[j] - palData[i].scores[j])))
+                    }
+                }
+                console.log("WWWW " + sumArray)
+
+                for (let w = 0; w < sumArray.length; w += 10) {
+                    friendDiff.push(sumArray.slice(w, w + 10).reduce(getSum));
+                }
+                console.log(friendDiff);
+
+                Array.prototype.min = function () {
+                    return Math.min.apply(null, this);
+                };
+
+                console.log(friendDiff.min())
+                let minDiff = friendDiff.min();
+
+                function findFriend(onePerson) {
+                    return onePerson == minDiff;
+                }
+
+                console.log(friendDiff.findIndex(findFriend))
+
+                for (z = 0; z < friendDiff.length; z++) {
+                    if (friendDiff.findIndex(findFriend) === z) {
+                        console.log(palData[z].name)
+                        if (friendDiff.length > 2) {
+                            alert("Your friend match is: " + palData[z].name)
+                        }
+
+                        var palSection = $("<div>");
+                        palSection.addClass("well");
+                        palSection.attr("id", "palWell");
+                        $("#testHere").append(palSection);
+
+                        $("#palWell").append("<h6><span class='label label-primary'>" + palData[z].name + "</span> | " + palData[z].photo + "</h6>");
+                    }
+                }
+            });
+    }
+
+    runFriendQuery();
+
+</script>
